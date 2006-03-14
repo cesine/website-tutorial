@@ -1,0 +1,30 @@
+body {
+        background-color: #FFFFFF;
+        line-height: 120%;
+        height: 100%;
+        font-family: Tahoma, Verdana, Arial;
+        font-size: 80%;
+        font-weight: normal;
+        color: #333333;
+        padding: 0px;
+        margin: 15px;
+} 
+
+a:link, a:visited {
+        text-decoration: none;
+        color: #000055;
+} 
+
+a:hover {
+        text-decoration: underline;
+}
+
+
+H1 { FONT-SIZE: 140%; }
+
+H2 { FONT-SIZE: 130%; }
+
+H3 { FONT-SIZE: 120%; }
+
+H4 { FONT-SIZE: 110%; }
+

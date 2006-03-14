@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>This is the title for the Title Bar on the top of the Browser Window</title>
+<meta http-equiv="content-type" content="text-html; charset=utf-8" />
+<link href='cesine090110.css' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+<div class="c1">
+<h1>Introduction to fundamental programming skills using HTML</h1>
+(and sometimes a whole new realm of possibilities :)</div>
+<blockquote><em>Make them some fish, and they'll have a meal for that day. Teach them how cook fish and they'll have a meal whenever they want fish. Teach them how to cook, and they'll make a meal whenever they' re hungry... as long as greasy fastfood isn't nearby.</em></blockquote>
+<p> </p>
+<p>Welcome!</p>
+<p>The main goals of this tutorial are:</p>
+<ul>
+<li>teach you how to "read" html source code</li>
+<li>teach you how to name your files and directories so that all browsers and web servers can read them</li>
+<li>teach you how to organize your webpages so that it will always work if you choose to put it on a new site.</li>
+<li>as a result, have a simple, elegant and professional website that you can refer back to if you want to make a new HTML document</li>
+</ul>
+<p>If you've never programmed before, HTML is a great place to start. There are witty and fun "howtos" on the web were you can sit down and learn enough HTML in 1 hour to build a great looking site. References for these are available at the end of the tutorial. For now I recommend that you follow this tutorial step by step <em>and finish it in one sitting</em> so that you will have a resulting source code you can look back at in the future if you forget how to do something. One of the great things about HTML is that you don't need to memorize it. You can always copy and paste old code to add new information.</p>
+<p>Let's get started.</p>
+<p>Right now you are looking at the <strong>graphical output</strong> of your <strong>source code</strong>. During the tutorial you need both a <strong>browser</strong> open to view the graphical output, and a simple <strong>text editor</strong> open to edit the code. We will be going back and forth constantly through the tutorial.</p>
+<p>Let's get ourselves set up.</p>
+<p>Open a browser. For a browser I recommend <a href="http://www.mozilla.com/firefox/">Firefox</a>, Mozilla or Netscape (Microsoft Explorer is a browser too, but I swear its engineered to make programming html a pain in the �s. It likes to rename your files as "htm" rather than "html"). Close all windows other than this one.</p>
+<p>For a text editor (in Windows) you should download TextPad. This is a text editor that is easy to use yet has tons of features, like showing your code in different colors so its easy to see what you're doing. TextPad can also open <em>huge</em> files. You can do really complex searches that let you pull out all utterances (for example) that contain <em>ngan</em> if you were working on some Kuching Malay data. If you're curious about other uses of TextPad you can send me an email and I can tell you more :) TextPad can also do spellchecks (in many languages), a crucial feature when you're doing a website. Download <a target="top" href="http://www.textpad.com/download/v53/txpeng531.exe">textpad (txpeng473.exe)</a> On a mac I used to use bbedit, I'm not sure if its still the best choice.</p>
+<p>First, where do you keep files that you don't want to loose? Wherever that is, make a folder on your computer called "my.website" <strong>be very careful with capital letters and spaces in your file names, in particular you should never use them</strong> ALWAYS write your filenames in lowercase letters. If you need a space, you can use a dot (.) or an underscore (_). Choose one method and always use it, that way you wont forget what you named your files when it comes time to link them. Get into this habit so that documents you make later on (such as .pdf) will work on your website too. Just because Windows lets you save your document "Occam's Greatest razor &amp; polish.HTML" doesn't mean you should!! Many browsers use special symbols like ' and &amp; to introduce variable which means they simply cant read your filename (resulting an a "File Not Found" error) or worse, the browser will do something you never intended with your filename..</p>
+<p>We need to make some directories in your website to keep it nice and clean. Picture your website as a hierarchical tree. The label of the root node is my.website. Under will be some branches (nodes), one for each area of your website. If you want to put your courses or your research, make a folder for each. Inside these folders (nodes) you will further make folders for each course and each project. I recommend having something like this /courses/ling101/2006spring/ where each section of ling101 has its own subfolder. I like to name my files with the year first (then the month and then the day) so that they appear in chronological order. This why i chose "2006spring" rather than "spring2006" You also need to make a folder called "images" this will be where you keep all your pictures, buttons, logo (any other jpg or gif that you use in the <em>root</em> of you website (the images for your courses and research projects should be in those folders). This makes a modular website that you can copy folders and move them around without breaking the links inside. Drawing on the tree metaphore we'll talk about how to refer (link) between sister leafs, daughter leafs, mother nodes and other trees (sites that are not part of your website) later on.</p>
+<p><a href="website.hierarchy.big.jpg"><img src="website.hierarchy.jpg" border="0" alt="** PLEASE DESCRIBE THIS IMAGE **" /></a></p>
+<p>We are now ready to get started. How does html work? html is a very simple language which <strong>marks/tags</strong> certain text to be formatted in a certain way. Browsers read this code and send a visual, formatted document to the screen. (In fact this is how Microsoft Word works too.) Lets see what this source code looks like. Go to the View:Page Source menu. Another window will open and you will see the source code of this page. We are going to save this source and play with it.</p>
+<p>Save the source code as "tutorial.html" below the <strong>root</strong> node of you tree (on your computer this would be as a daughter to the "my.website" folder). Now open your new html page with TextPad. You didn't name it as Tutorial.html or Tutorial.htm did you? Double check. Once you have opened the source code and skimmed through it, stop and wait to everyone. Did you look though? Anything you noticed?</p>
+<p>One of the most important things to know about html is that <strong>whitespace</strong> doesn't display. Switch over to look at the source code. Locate this section in the source and continue reading. Between this word and this word in the code there are a lot of spaces. but it will display as only one space. between this line and this line in the code there are many lines, but again it will only display as one space. Check both your visual output (in the browser) and the source code (in the text editor). Well, if the browser doesn't display extra spaces, how do you double or single space? To double space your text you can put a "p" at the start of a new <strong>paragraph</strong>. Compare your source and your browser. did you see how I've been making all these paragraphs?</p>
+<p>if you only want to end the line and not double space you can try "br" which stands for <strong>break</strong><br />
+this text will display on the next line,<br />
+even<br />
+though<br />
+its<br />
+on<br />
+the<br />
+same<br />
+line in the code.</p>
+<p>continue reading in the browser.</p>
+<p><strong>tags</strong> are made within angle brackets. you open a tag like this (look in the source) and you close the tag with a slash before the word like this (look in the source)</p>
+<p>nearly all tags work this way. lets take a look at the top of the document (reading in the source)</p>
+<p>The entire page opens with an open html tag, then there is a section called the head. which is opened by &lt; head &gt;. the head contains information about which character set you are using, the title of your page, the key words of your page for search engines etc. Lets try changing the title. Look at the text between the open title tag and the close title tag. Change it to something else. Save your source (Ctr-S), and reload/refresh (Ctr-R) your browser. Did the title change? Why didn't it....try to figure it out by yourself. Congratulations, you're about to start your first de-bugging experience ;)</p>
+<p>Did you figure it out yet? What address is the browser displaying? Isn't that my website? Where is the file that you edited? Did you edit the file on my website? I doubt it. You edited the file that you saved in your "my.website" folder. Type Ctr-O to open a new file. Navigate to your my.website folder and open "tutorial.html" Now can you see the title you typed? I hope so. If you're doing this tutorial on your own you can try messaging me using MSN messenger (I'm cesine@hotmail.com). If it worked lets go back to the top of the source code.</p>
+<p>After specifying the charset (ie, russian, english, unicode), keywords and title we close the head, then open the body. The body is where you put the text that you want to be displayed on the page. You can add extra information such as background color, text color, link color and more. We will try that later for you personal pages. In the body are some more examples of commonly used tags, tags I used to format the text of this tutorial. Where is the closing tag for the body? Notice that the text between the opening of a &lt; tag &gt; and the closing of a &lt; / tag &gt; can be infinite. Skim through the source until you get to this point in the text (you probably noticed other tags along the way, we'll explain them in a minute).</p>
+<p>You can guess what the "h" is for in h1, h2 etc..</p>
+<h1>Here is a heading</h1>
+weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe
+<h2>Here is a subheadding</h2>
+hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe
+<h3>Here is a subsubheadding</h3>
+hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe weoafmoe fapkf [pajfo9ahw cpok phf waejf[awej hfpwaefa epofjmwape9aiwejpa iefjaofe pjwepfojpwe
+<h4>Here is a subsubsubheadding</h4>
+Locate the the closing tag for h1, what happens if you delete it? Try it and see. Don't forget to save your source code and refresh your browser. What happened? The rest of the document turned into a heading. Not pretty huh?
+<p>Here is a more likely typo: say you forgot to type the closing angle bracket &gt;</p>
+<p>put back the closing tag for h1 but leave off the &gt;. Save your code and refresh your browser.</p>
+<p><strong>TIP</strong> if you want to learn how to do this fast using the keyboard, try this combination of commands: Ctr-S then hold down ALT and push TAB once, a little window will pop up that lets you TAB though your open windows, let go of ALT and the focus will change to the browser (if you did it right) now push Ctr-R. tada, three quick steps :)</p>
+<p>So, what happened? Mmmm, it looks exactly the same doesn't it. Does there seem to be an error? be careful, this time its what you <em>don't</em> see thats the problem. What disappeared? The entire paragraph following the h1 disappeared. Yikes! thats an error that you might spend hours wondering why, why and why your important paragraph refuses to display... Lets put our angle bracket back on, save and keep going.</p>
+<p>you can also customize the size and color of your headings. we will do this later when you start your own page.</p>
+<p>Lets make a list</p>
+<ul>
+<li>list item 1</li>
+<li>list item 2</li>
+</ul>
+How do you make a list item? can you guess what li stands for? try adding a third item. Save, and refresh
+<p>wasn't that fun?</p>
+<p>Now we are going to get a bit complicated. Remember we saw open tags that look like this (look in the source) and closing tags like this . You can give extra options <em>inside</em> the open tag. This is done with variables that you can set. something like</p>
+<p>variable="value"</p>
+<p>Lets look at the most popular "a" tag. This is used for creating a link. (I have no idea what the "a" stands for..) the text between the open &lt; a &gt;tag and the closed &lt; / a &gt; tag will display as a link. <a>here is some text that should be a link, but is it?</a> compare your source code in the text editor and the visual output in the browser. why isn't that text a link?</p>
+<p>Its not a link because links need a variable called an "href" (hypertext reference?) that they refer to. read along in the source. lets try giving "href" a value. (always type the values for your variables in quotes "") <a href="a.filename.html">this might be a link.</a> Now does it look like a link? does it work? why doesn't it work? the error message says the file doesn't exist, is the error message telling the truth this time?</p>
+<p>Yes, this time its telling the truth. On the other hand, you can get this error either because that file doesn't exist (yet) or because the filename doesn't match the value we gave the href.</p>
+<p>Variables and their values always go <em>inside</em> the open tags, this is crucial</p>
+<pre>
+<br />
+  &lt; tag variable="value" &gt; some text to be formatted in a taggish way &lt; / tag &gt;
+</pre>
+<p>Now lets make a table.</p>
+<p>The table tag has many variables that you can set. look at the source to see some of the variables that i set for this table. try changing the border to 0, save and see what happens in your browser. now set the width to 50% and the border to 5, save and refresh your browser.</p>
+<table width="100%" border="1">
+<tr valign="top">
+<td>row 1 cell 1</td>
+<td>row 2 cell 2</td>
+</tr>
+<tr>
+<td>row 2 cell 1</td>
+</tr>
+</table>
+Tables are easy ways to organize your pages. Almost every page on the internet uses tables (with no border) to create a invisible layout, like my page at <a href="../../" target="top">http://copland.udel.edu/~cesinec/</a>
+<p>We will be using a table to make our websites.</p>
+<p>Go back to your browser window. scroll down to this section</p>
+<p>Are you tired of this boring page with ugly blue underlined links? lets take the personal webpage template and customize it. go to my downloads folder to open the file <a target="top" href="../website.tutorial/">template.html</a>. save the source in your my.website folder as "index.html" Again, be careful how you save it. Make sure it saves as "index.html" not "index.htm" or anything else. Also save the cascading style sheet (.css) file in your my.website folder. .css files make pretty formatting :)</p>
+<p>Open your index.html both in TextPad, and in a browser window and wait for everyone.</p>
+<hr />
+<p><!--Code for the WC3 validator image -->
+ <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a></p>
+</body>
+</html>
+
+
